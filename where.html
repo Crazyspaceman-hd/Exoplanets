@@ -63,26 +63,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <div class="container">
       <div class="row p-2">
-        <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
-          This bar chart is a summary of all exoplanets found in a given year. The two subsequent plots are split between planets found by facilities in space and on the ground.
-      </div>
-      <div class="row p-2">
         <div class="col-sm d-flex justify-content-center">
               <img src="Images\specType.png" class="img-fluid rounded" alt="...">
           </div>
       </div>
-
-
-      <div class="row">
-        <div class="col-sm d-flex justify-content-evenly">
-            <img src="Images\disc_year_ground.png" class="img-fluid rounded" alt="...">
-        </div>
-        <div class="col-sm d-flex justify-content-evenly">
-          <img src="Images\disc_year_space.png" class="img-fluid rounded" alt="...">
+      <div class="row p-2">
+        <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
+          This bar chart divides all planets from our data set by the spectral type of the star they are orbiting.
       </div>
+
+
+      <div class="row p-2">
+        <div class="col-sm d-flex justify-content-evenly">
+            <img src="Images\age.png" class="img-fluid rounded" alt="...">
+        </div>       
+    </div>
+    <div class="row p-2">
+      <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
+        This histogram divides all stars with discovered exoplanets by age, it contains 20 bins and skews heavily towards younger stars though there is an outlier system at over 14 billion years old!
     </div>
 
     </div>
+    <div class="row p-2">
+      <div class="col-sm d-flex justify-content-evenly">
+          <img src="Images\distance.png" class="img-fluid rounded" alt="...">
+      </div>       
+  </div>
+  <div class="row p-2">
+    <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
+      This histogram divides all stars with discovered exoplanets by distance, it contains 40 bins in an effort to deal with outlier systems over 4000 parsecs away.
+      <small class="text-danger">A parsec is a unit of distance equal to 3.26 light years.</small>
+  </div>
 
   </body>
 </html>
