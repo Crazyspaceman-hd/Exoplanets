@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>Exoplanets-WHO</title>
+    <title>Exoplanets-WHAT</title>
   </head>
   </style>  
   <body class="bg-dark">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-secondary bg-gradient">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary bg-gradient">
         <div class="container-fluid">
           <a class="navbar-brand btn btn-dark" style="color: #ffffff" href="index.html">Exoplanets</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,8 @@
                   Dropdown
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-
+                  <li><a class="dropdown-item" href="#">S</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="planet_data.html">Planet Data</a></li>
                   <li><a class="dropdown-item" href="star_data.html">Star Data</a></li>
@@ -56,27 +57,37 @@
       <div class="container">
         <div class="row">
           <div class="col-sm text-center p-3" style="color: #ffffff">
-            <h1 class="display-1 ">WHO</h1>
-            This page contains charts relating to the facilities that discovered the exoplanets.
-            
+            <h1 class="display-1 ">WHAT</h1>
+            This page contains charts relating to the planets have been discovered orbiting other stars.
           </div>
         </div>
         <div class="row p-2">
-            <div class="col-sm">
-                <img src="Images\discLocation.png" class="img-fluid rounded" alt="...">
-            </div>
-            <div class="col-sm bg-white text-center rounded d-flex align-items-center">
-                This first plot splits the exoplanets by the location of the facility that discovered them between earth based or space based telescopes. While the ground telescopes have discovered more exoplanets overall there are 6 times the number of ground facilities that have been used for discovery indicating the importance of space based observation platforms.
-            </div>
+          <div class="col-sm d-flex justify-content-center">
+              <img src="Images\planets.png" class="img-fluid rounded" alt="...">
           </div>
+          <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
+            This bar graph breaks down the host stars by the number of planets that have been discovered orbiting them. While the majority is most definitely held by single planet systems at this point it is worth noting that over a hundred 2 planet systems. Also interesting is the fact that systems of up to 8 planets have been located equaling our home system for planets orbiting a star.
+      </div>
+      
         <div class="row p-2">
-            <div class="col-sm text-centerv rounded" style="color: #ffffff">
-                <img src="Images\discFacility.png" class="rounded" alt="...">
-            </div>
-            <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
-                At first glance this chart may not seem to be overly helpful however it helps to illustrate the dominance of space based observatories over their ground counterparts. The Kepler space telescope left service in 2018 after less than 10 years but at this point remains far ahead of it's closest ground based competitor.
+            <div class="col-sm d-flex justify-content-center">
+                <img src="Images\RadiusJvsMassJ.png" class="img-fluid rounded" alt="...">
             </div>
         </div>
+        <div class="row p-2">
+          <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
+            This scatter-plot comparing the radius of a planet to it's mass illustrates the immense variation of planets to be found throughout the galaxy. The units are both in relation to Jupiter the largest planet in our solar system. Original work in this field favored the discovery of very large and massive planets as they would have a more noticable effect on their host star. The large number of planets clustered near 0 mass prompted the creation of the next plot.
+            <small class="text-danger">Note that rows containing null or 0 in the mass or radius columns were removed for this plot.</small>
+        </div>
+        <div class="row p-2">
+          <div class="col-sm d-flex justify-content-center">
+              <img src="Images\RadiusJvsMassJlow.png" class="img-fluid rounded" alt="...">
+          </div>
+      </div>
+      <div class="row p-2">
+        <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
+          This plot is a significantly narrowed version of the plot above, it contains only planet with a radius less than that of Jupiter and mass below .2 Jupiters. The plot shows that while there appeared to the line at 0 on the original plot when focused down there is just as much variation in planets smaller and less massive than Jupiter as ones that are larger and more massive.
+      </div>
       </div>
 
 
