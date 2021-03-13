@@ -7,8 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <title>Exoplanets-WHO</title>
+    <title>Exoplanets-WHERE</title>
   </head>
   </style>  
   <body class="bg-dark">
@@ -41,7 +40,8 @@
                   Dropdown
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-
+                  <li><a class="dropdown-item" href="#">S</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="planet_data.html">Planet Data</a></li>
                   <li><a class="dropdown-item" href="star_data.html">Star Data</a></li>
@@ -52,38 +52,37 @@
           </div>
         </div>
       </nav>
-
       <div class="container">
         <div class="row">
           <div class="col-sm text-center p-3" style="color: #ffffff">
-            <h1 class="display-1 ">WHO</h1>
-            This page contains charts relating to the facilities that discovered the exoplanets.
-            
+            <h1 class="display-1 ">WHERE</h1>
+            This page contains charts relating to stars where exoplanets were found.
           </div>
         </div>
-        <div class="row p-2">
-            <div class="col-sm d-flex justify-content-center">
-                <img src="Images\discLocation.png" class=" img-fluid rounded" alt="...">
-            </div>
-            <div class="col-sm bg-white text-center rounded d-flex align-items-center">
-                This first plot splits the exoplanets by the location of the facility that discovered them between earth based or space based telescopes. While the ground telescopes have discovered more exoplanets overall there are 6 times the number of ground facilities that have been used for discovery indicating the importance of space based observation platforms.
-            </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <div class="container">
+      <div class="row p-2">
+        <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
+          This bar chart is a summary of all exoplanets found in a given year. The two subsequent plots are split between planets found by facilities in space and on the ground.
+      </div>
+      <div class="row p-2">
+        <div class="col-sm d-flex justify-content-center">
+              <img src="Images\specType.png" class="img-fluid rounded" alt="...">
           </div>
-        <div class="row p-2">
-            <div class="col-sm text-centerv rounded" style="color: #ffffff">
-                <img src="Images\discFacility.png" class="rounded" alt="...">
-            </div>
-            <div class="col-sm bg-white text-center rounded d-flex align-items-center ">
-                At first glance this chart may not seem to be overly helpful however it helps to illustrate the dominance of space based observatories over their ground counterparts. The Kepler space telescope left service in 2018 after less than 10 years but at this point remains far ahead of it's closest ground based competitor.
-            </div>
-        </div>
       </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <div class="row">
+        <div class="col-sm d-flex justify-content-evenly">
+            <img src="Images\disc_year_ground.png" class="img-fluid rounded" alt="...">
+        </div>
+        <div class="col-sm d-flex justify-content-evenly">
+          <img src="Images\disc_year_space.png" class="img-fluid rounded" alt="...">
+      </div>
+    </div>
+
+    </div>
+
   </body>
 </html>
