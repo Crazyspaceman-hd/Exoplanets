@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Exoplanets</title>
+  </head>
+  </style>  
+  <body >
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary bg-gradient">
+        <div class="container-fluid">
+          <a class="navbar-brand btn btn-dark" style="color: #ffffff" href="index.html">Exoplanets</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color: #ffffff" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #ffffff" href="who.html">Who</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #ffffff" href="what.html">What</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #ffffff" href="when.html">When</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" style="color: #ffffff" href="where.html">Where</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="color: #ffffff" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">S</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 align-middle shadow bg-white rounded p-3">
+             <p class="h2">Summary: Exoplanet analysis</p><br> 
+            The purpose of this project was to analyze data about currently discovered exoplanets. To accomplish this I acquired data from the
+            <a href="https://exoplanetarchive.ipac.caltech.edu/index.html">NASA Exoplanet Archive</a> using their site interface.
+            <br><br>          
+            After downloading the produced CSV some data cleaning was still required to make header names more user friendly and remove columns superflous to the ananlysis. The final data frame contained 2092 rows and 19 columns. An additional data set was formed by removing duplicate entries systems containing multiple planets. This left a list with a single entry for each host star allowing for more convienient analysis of the star itself.
+            <br><br>
+            After assembling these data sets, I used Matplotlib to plot various information about the exoplanets and the stars they orbit. The information plotted includes year of discovery, name of observatory where the discovery was made, and total number of planets in system as well as several others. This site provides the cleaned source data and visualizations I created as part of my analysis, as well as descriptions and explanations of the visualizations.
+          </div>
+          <div class="col-sm-8 p-3">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <figure>
+                        <blockquote class="blockquote">
+                          <p>“Across the sea of space, the stars are other suns.”</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                             Carl Sagan
+                        </figcaption>
+                      </figure>
+                </div>
+            <div class="row justify-content-center">
+              <div class="col-4 col-sm-6">
+                <figure class="figure shadow  bg-white rounded">
+                    <img src="Images\RadiusJvsMassJ.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                  </figure>
+              </div>
+              <div class="col-4 col-sm-6">
+                <figure class="figure shadow">
+                    <img src="Images\discYear.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                  </figure>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12">
+                  <figure class="figure shadow ">
+                      <img src="Images\discFacility.png" class="figure-img img-fluid rounded" alt="...">
+                      <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                    </figure>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 col-sm-12  shadow">
+                  <figure class="figure ">
+                      <img src="Images\specType.png" class="figure-img img-fluid rounded" alt="...">
+                      <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                    </figure>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>
